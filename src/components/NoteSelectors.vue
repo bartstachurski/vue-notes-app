@@ -16,3 +16,15 @@ export default {
   }
 };
 </script>
+
+<style>
+/*Layout*/
+.note-selectors {
+ flex: 0 0 13em;
+}
+
+/*Colors*/
+.note-selectors {
+ border-right: 1px solid #DCDADC;
+}
+</style>

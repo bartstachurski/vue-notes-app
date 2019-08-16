@@ -35,13 +35,11 @@ export default {
  min-height: 100vh;
 }
 
-
 /* COLORS */
 * {
  color: #454545;
  background-color: #FAFAF8;
 }
-
 
 /* TYPOGRAPHY */
 body {
