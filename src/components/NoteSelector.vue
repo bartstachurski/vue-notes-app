@@ -1,5 +1,5 @@
 <template>
-  <div class="note-selector" v-bind:class="{active: false}" v-on:click="makeActive">
+  <div class="note-selector" v-bind:class="{active: selectedNoteId === note.id}" v-on:click="makeActive(note.id)">
     <p class="note-selector-title">{{ note.body }}</p>
     <p class="note-selector-timestamp">{{ note.timestamp }}</p>
   </div>
@@ -8,10 +8,10 @@
 <script>
 export default {
   name: 'note-selector',
-  props: ['note'],
+  props: ['note', 'selectedNoteId'],
   methods: {
-    makeActive: function() {
-      console.log("hellooooo from the makeActive function");
+    makeActive: function(noteId) {
+      this.$emit("selectNote", noteId);
     }
   }
 };
