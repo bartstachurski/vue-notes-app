@@ -1,8 +1,8 @@
 <template>
- <div id="app">
-  <Toolbar />
-  <NoteContainer />
- </div>
+  <div id="app">
+    <Toolbar />
+    <NoteContainer />
+  </div>
 </template>
 
 <script>
