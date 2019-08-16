@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Toolbar />
-    <NoteContainer />
+    <toolbar />
+    <note-container />
   </div>
 </template>
 

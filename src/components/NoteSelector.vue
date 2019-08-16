@@ -1,13 +1,19 @@
 <template>
-  <div class="note-selector active">
-    <p class="note-selector-title">Note title...</p>
-    <p class="note-selector-timestamp">Timestamp here...</p>
+  <div class="note-selector" v-bind:class="{active: false}" v-on:click="makeActive">
+    <p class="note-selector-title">{{ note.body }}</p>
+    <p class="note-selector-timestamp">{{ note.timestamp }}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'note-selector'
+  name: 'note-selector',
+  props: ['note'],
+  methods: {
+    makeActive: function() {
+      console.log("hellooooo from the makeActive function");
+    }
+  }
 };
 </script>
 

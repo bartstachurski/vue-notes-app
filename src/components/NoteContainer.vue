@@ -1,7 +1,7 @@
 <template>
   <div class="note-container">
-    <NoteSelectors />
-    <NoteEditor />
+    <note-selectors />
+    <note-editor />
   </div>
 </template>
 
